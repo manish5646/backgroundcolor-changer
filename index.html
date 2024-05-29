@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroud changer</title>
+    <style>
+        body{
+            
+            margin:0;
+            padding:20px 100px;
+        }
+        h1{
+            text-align:center ;
+            text-decoration:underline ;
+        }
+        img{
+            width:100%;
+            height: 500px;;
+            margin:0 auto;
+        }
+        p{
+            font-size:18px;
+            text-align:justify;
+        }
+        .btn{
+            width:20px;
+            height:20px;
+            display:inline-block ;
+            border:solid grey 2px;
+            border-radius: 50%;
+            cursor:pointer;
+
+        }
+        #white{
+             background-color: white;
+        }
+        #aqua{
+           background-color: aquamarine;
+        }
+        #violet{
+       background-color:#ce9aff ;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="voilet"onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About us</h1>
+    <img src="https://media.gettyimages.com/id/1271693278/photo/portrait-of-modern-business-startup-team-members.jpg?s=612x612&w=gi&k=20&c=CGxrbGBVTaer1GFPokvEmSbSo9jiiJPMp-69xWrKObo=" alt="">
+    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Reprehenderit cupiditate non nulla praesentium deserunt dolorem, 
+         dolores, qui nam quam beatae tempora aut autem quibusdam. 
+         Itaque ipsam quidem officiis consequuntur, obcaecati nulla a,
+          consequatur aperiam voluptas recusandae maxime alias nemo dolorum fugit id!
+           Laborum reprehenderit labore saepe quasi molestiae deleniti nesciunt voluptatum animi asperiores vel delectus aut nihil, 
+           repudiandae ratione accusamus explicabo iusto, voluptates neque laboriosam vero? 
+           Commodi non sed soluta facilis asperiores dicta inventore voluptatibus iste saepe!
+            Nisi unde modi ex fuga autem voluptas repudiandae, veritatis aliquam ipsa tenetur.
+             Distinctio minima cupiditate culpa. Animi quo distinctio consectetur ad
+             necessitatibus eaque possimus, blanditiis dolores suscipit sit? Labore 
+             ad earum necessitatibus inventore magni iusto eum architecto officiis,
+              nostrum voluptates nam id deleniti unde, tempora, sint vitae ea? 
+              Saepe expedita, dicta nulla fuga perspiciatis vero consequuntur fugiat 
+              corrupti iste ratione dolorem illo ipsam, dolore consequatur consectetur
+               placeat inventore dignissimos error distinctio architecto atque 
+               voluptatem exercitationem commodi? Modi, enim. Assumenda,
+                qui quas quis deleniti rem officia? Inventore aut assumenda 
+                quaerat velit laborum voluptatibus, aliquam earum nobis tenetur molestias 
+                pariatur ea quidem sint, totam beatae. Aliquid quas ab voluptatum ea.
+                 Obcaecati modi nobis ipsam beatae accusantium quas illum,
+                  magni voluptatem enim eos ab reprehenderit qui, 
+                  repellendus ad cum molestiae saepe vero, labore aspernatur.
+                   Ipsum ipsam id, animi dolorum architecto itaque? Perferendis facere ad,
+                    nulla, odio ipsa est nobis perspiciatis itaque distinctio a fuga architecto reiciendis autem aperiam in, quaerat ea laboriosam. Quo perspiciatis repellat error molestiae amet aut corrupti accusamus eum est omnis, ullam iste atque tempora, qui officiis dignissimos dolore laboriosam beatae, harum sed a magni at nesciunt ex. Saepe sit, quis voluptates perspiciatis, ex culpa illo a ratione ea reiciendis cum nobis neque itaque voluptatum? Possimus est officiis nam consectetur illo ullam consequatur fugiat dolorum, illum provident. Labore eveniet, consequuntur, molestias iste dicta beatae eos mollitia assumenda iure libero odit dolorum eum! Excepturi, ad, distinctio magnam dicta iure corporis reprehenderit, ipsam odit nisi ab nesciunt sequi provident saepe itaque eaque odio quos tenetur maxime vitae vero? Inventore aliquam perferendis numquam possimus eius odio nostrum consequuntur, fuga eveniet obcaecati, iure quaerat nobis in officiis reprehenderit cum, quas facilis dolores nemo harum. Repellat earum dolorum vero inventore hic nostrum sequi fuga sed eum. Cum qui velit at molestiae, adipisci, blanditiis voluptas consectetur ab est consequuntur commodi facere atque labore ex voluptate consequatur, eum optio accusantium! Cumque obcaecati eius, autem quas voluptatum rerum nesciunt rem earum dolorem optio error perferendis, dolore minima aperiam numquam ex eligendi! Culpa quod consequuntur qui, repellat ipsa voluptatum labore laudantium cupiditate praesentium unde fugiat iste suscipit consectetur recusandae obcaecati commodi odio molestiae blanditiis et reprehenderit libero perferendis itaque sapiente. Aperiam, rem? A facere ipsum recusandae totam aliquam adipisci ipsa, impedit magnam, commodi nulla cumque. Nulla at rem fugiat facere libero magni exercitationem asperiores, nesciunt impedit cum ea! Vel quis facere itaque, ut sunt, odio nobis delectus impedit, ipsa nam doloremque voluptates. Tempore voluptatibus dolorum expedita laboriosam itaque unde repellendus voluptates ipsa, rem commodi. Error, 
+                    earum amet consequuntur quis in laborum reprehenderit.</p>
+
+                    <script>
+                        function changeBG(color){
+                            document.body.style.backgroundColor = color;
+                            let txt = document.getElementByclassName("text");
+                            if(color =="#000000"){
+                                for(let elm of txt){
+                                    elm.style.color = "white";
+                                }
+                            }else{
+                                for(let elm of txt){
+                                    elm.style.color = "black";
+                                }
+
+                            }
+
+                        }
+                    </script>
+</body>
+</html>
